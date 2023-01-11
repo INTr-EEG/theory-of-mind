@@ -143,63 +143,62 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/imgs/slides/slide-08.png', 'path': 'resources/imgs/slides/slide-08.png'},
-    {'name': 'resources/imgs/slides/slide-04.png', 'path': 'resources/imgs/slides/slide-04.png'},
-    {'name': 'resources/imgs/slides/o-slide-03.png', 'path': 'resources/imgs/slides/o-slide-03.png'},
-    {'name': 'resources/aud/slide-04.m4a', 'path': 'resources/aud/slide-04.m4a'},
-    {'name': 'resources/aud/slide-22.m4a', 'path': 'resources/aud/slide-22.m4a'},
-    {'name': 'resources/aud/slide-05.m4a', 'path': 'resources/aud/slide-05.m4a'},
-    {'name': 'resources/imgs/slides/slide-09.png', 'path': 'resources/imgs/slides/slide-09.png'},
-    {'name': 'resources/imgs/slides/slide-18.png', 'path': 'resources/imgs/slides/slide-18.png'},
-    {'name': 'resources/imgs/slides/slide-23.png', 'path': 'resources/imgs/slides/slide-23.png'},
-    {'name': 'resources/aud/slide-11.m4a', 'path': 'resources/aud/slide-11.m4a'},
-    {'name': 'resources/imgs/slides/slide-00-intr.png', 'path': 'resources/imgs/slides/slide-00-intr.png'},
-    {'name': 'resources/imgs/slides/slide-05.png', 'path': 'resources/imgs/slides/slide-05.png'},
-    {'name': 'resources/aud/slide-13.m4a', 'path': 'resources/aud/slide-13.m4a'},
-    {'name': 'resources/imgs/slides/slide-10.png', 'path': 'resources/imgs/slides/slide-10.png'},
-    {'name': 'resources/imgs/slides/slide-17.png', 'path': 'resources/imgs/slides/slide-17.png'},
-    {'name': 'resources/imgs/slides/slide-07.png', 'path': 'resources/imgs/slides/slide-07.png'},
-    {'name': 'resources/imgs/slides/slide-03.png', 'path': 'resources/imgs/slides/slide-03.png'},
-    {'name': 'resources/aud/slide-03b.m4a', 'path': 'resources/aud/slide-03b.m4a'},
-    {'name': 'resources/imgs/slides/slide-24.png', 'path': 'resources/imgs/slides/slide-24.png'},
-    {'name': 'resources/imgs/slides/slide-14.png', 'path': 'resources/imgs/slides/slide-14.png'},
-    {'name': 'resources/imgs/slides/slide-22.png', 'path': 'resources/imgs/slides/slide-22.png'},
-    {'name': 'resources/aud/slide-06b.m4a', 'path': 'resources/aud/slide-06b.m4a'},
-    {'name': 'resources/aud/slide-07.m4a', 'path': 'resources/aud/slide-07.m4a'},
-    {'name': 'resources/imgs/slides/slide-06.png', 'path': 'resources/imgs/slides/slide-06.png'},
-    {'name': 'resources/aud/slide-15.m4a', 'path': 'resources/aud/slide-15.m4a'},
-    {'name': 'resources/imgs/slides/slide-03b.png', 'path': 'resources/imgs/slides/slide-03b.png'},
-    {'name': 'resources/imgs/slides/slide-12.png', 'path': 'resources/imgs/slides/slide-12.png'},
-    {'name': 'resources/aud/slide-03.m4a', 'path': 'resources/aud/slide-03.m4a'},
-    {'name': 'resources/aud/slide-02.m4a', 'path': 'resources/aud/slide-02.m4a'},
-    {'name': 'resources/seqs/conditions.csv', 'path': 'resources/seqs/conditions.csv'},
-    {'name': 'resources/aud/slide-06.m4a', 'path': 'resources/aud/slide-06.m4a'},
-    {'name': 'resources/imgs/slides/slide-02.png', 'path': 'resources/imgs/slides/slide-02.png'},
-    {'name': 'resources/imgs/next.png', 'path': 'resources/imgs/next.png'},
-    {'name': 'resources/aud/slide-19.m4a', 'path': 'resources/aud/slide-19.m4a'},
-    {'name': 'resources/imgs/slides/slide-13.png', 'path': 'resources/imgs/slides/slide-13.png'},
-    {'name': 'resources/imgs/slides/slide-16.png', 'path': 'resources/imgs/slides/slide-16.png'},
     {'name': 'resources/imgs/slides/slide-15.png', 'path': 'resources/imgs/slides/slide-15.png'},
-    {'name': 'resources/imgs/slides/slide-20.png', 'path': 'resources/imgs/slides/slide-20.png'},
-    {'name': 'resources/imgs/slides/slide-11.png', 'path': 'resources/imgs/slides/slide-11.png'},
-    {'name': 'resources/aud/slide-00-intr.m4a', 'path': 'resources/aud/slide-00-intr.m4a'},
-    {'name': 'resources/aud/slide-23.m4a', 'path': 'resources/aud/slide-23.m4a'},
-    {'name': 'resources/aud/slide-08.m4a', 'path': 'resources/aud/slide-08.m4a'},
-    {'name': 'resources/aud/slide-14.m4a', 'path': 'resources/aud/slide-14.m4a'},
-    {'name': 'resources/aud/slide-17.m4a', 'path': 'resources/aud/slide-17.m4a'},
-    {'name': 'resources/aud/slide-21.m4a', 'path': 'resources/aud/slide-21.m4a'},
-    {'name': 'resources/imgs/slides/slide-19.png', 'path': 'resources/imgs/slides/slide-19.png'},
-    {'name': 'resources/aud/slide-01.m4a', 'path': 'resources/aud/slide-01.m4a'},
-    {'name': 'resources/aud/slide-12.m4a', 'path': 'resources/aud/slide-12.m4a'},
-    {'name': 'resources/aud/slide-18.m4a', 'path': 'resources/aud/slide-18.m4a'},
-    {'name': 'resources/aud/slide-24.m4a', 'path': 'resources/aud/slide-24.m4a'},
-    {'name': 'resources/imgs/slides/slide-01.png', 'path': 'resources/imgs/slides/slide-01.png'},
+    {'name': 'resources/imgs/slides/slide-03b.png', 'path': 'resources/imgs/slides/slide-03b.png'},
     {'name': 'resources/aud/slide-16.m4a', 'path': 'resources/aud/slide-16.m4a'},
-    {'name': 'resources/aud/slide-00-title.m4a', 'path': 'resources/aud/slide-00-title.m4a'},
+    {'name': 'resources/aud/slide-17.m4a', 'path': 'resources/aud/slide-17.m4a'},
+    {'name': 'resources/aud/slide-24.m4a', 'path': 'resources/aud/slide-24.m4a'},
+    {'name': 'resources/imgs/slides/slide-07.png', 'path': 'resources/imgs/slides/slide-07.png'},
+    {'name': 'resources/aud/slide-11.m4a', 'path': 'resources/aud/slide-11.m4a'},
+    {'name': 'resources/aud/slide-04.m4a', 'path': 'resources/aud/slide-04.m4a'},
+    {'name': 'resources/imgs/slides/slide-20.png', 'path': 'resources/imgs/slides/slide-20.png'},
+    {'name': 'resources/aud/slide-06.m4a', 'path': 'resources/aud/slide-06.m4a'},
+    {'name': 'resources/aud/slide-23.m4a', 'path': 'resources/aud/slide-23.m4a'},
+    {'name': 'resources/imgs/slides/slide-18.png', 'path': 'resources/imgs/slides/slide-18.png'},
+    {'name': 'resources/aud/slide-05.m4a', 'path': 'resources/aud/slide-05.m4a'},
     {'name': 'resources/imgs/slides/slide-21.png', 'path': 'resources/imgs/slides/slide-21.png'},
+    {'name': 'resources/imgs/slides/slide-09.png', 'path': 'resources/imgs/slides/slide-09.png'},
+    {'name': 'resources/imgs/slides/slide-23.png', 'path': 'resources/imgs/slides/slide-23.png'},
+    {'name': 'resources/aud/slide-19.m4a', 'path': 'resources/aud/slide-19.m4a'},
+    {'name': 'resources/imgs/slides/slide-22.png', 'path': 'resources/imgs/slides/slide-22.png'},
+    {'name': 'resources/aud/slide-12.m4a', 'path': 'resources/aud/slide-12.m4a'},
+    {'name': 'resources/aud/slide-22.m4a', 'path': 'resources/aud/slide-22.m4a'},
+    {'name': 'resources/imgs/slides/slide-14.png', 'path': 'resources/imgs/slides/slide-14.png'},
+    {'name': 'resources/aud/slide-01.m4a', 'path': 'resources/aud/slide-01.m4a'},
+    {'name': 'resources/imgs/slides/slide-16.png', 'path': 'resources/imgs/slides/slide-16.png'},
+    {'name': 'resources/imgs/next.png', 'path': 'resources/imgs/next.png'},
+    {'name': 'resources/aud/slide-13.m4a', 'path': 'resources/aud/slide-13.m4a'},
+    {'name': 'resources/aud/slide-14.m4a', 'path': 'resources/aud/slide-14.m4a'},
+    {'name': 'resources/imgs/slides/slide-01.png', 'path': 'resources/imgs/slides/slide-01.png'},
+    {'name': 'resources/imgs/slides/slide-10.png', 'path': 'resources/imgs/slides/slide-10.png'},
+    {'name': 'resources/imgs/slides/slide-02.png', 'path': 'resources/imgs/slides/slide-02.png'},
+    {'name': 'resources/imgs/slides/slide-19.png', 'path': 'resources/imgs/slides/slide-19.png'},
+    {'name': 'resources/aud/slide-00-intr.m4a', 'path': 'resources/aud/slide-00-intr.m4a'},
+    {'name': 'resources/aud/slide-02.m4a', 'path': 'resources/aud/slide-02.m4a'},
+    {'name': 'resources/aud/slide-15.m4a', 'path': 'resources/aud/slide-15.m4a'},
+    {'name': 'resources/aud/slide-00-title.m4a', 'path': 'resources/aud/slide-00-title.m4a'},
+    {'name': 'resources/aud/slide-03.m4a', 'path': 'resources/aud/slide-03.m4a'},
+    {'name': 'resources/aud/slide-03b.m4a', 'path': 'resources/aud/slide-03b.m4a'},
+    {'name': 'resources/aud/slide-07.m4a', 'path': 'resources/aud/slide-07.m4a'},
+    {'name': 'resources/imgs/slides/slide-00-title.png', 'path': 'resources/imgs/slides/slide-00-title.png'},
+    {'name': 'resources/imgs/slides/slide-08.png', 'path': 'resources/imgs/slides/slide-08.png'},
+    {'name': 'resources/imgs/slides/slide-24.png', 'path': 'resources/imgs/slides/slide-24.png'},
+    {'name': 'resources/imgs/slides/slide-05.png', 'path': 'resources/imgs/slides/slide-05.png'},
+    {'name': 'resources/aud/slide-06b.m4a', 'path': 'resources/aud/slide-06b.m4a'},
     {'name': 'resources/aud/slide-20.m4a', 'path': 'resources/aud/slide-20.m4a'},
+    {'name': 'resources/imgs/slides/slide-04.png', 'path': 'resources/imgs/slides/slide-04.png'},
+    {'name': 'resources/aud/slide-21.m4a', 'path': 'resources/aud/slide-21.m4a'},
+    {'name': 'resources/imgs/slides/slide-00-intr.png', 'path': 'resources/imgs/slides/slide-00-intr.png'},
+    {'name': 'resources/aud/slide-08.m4a', 'path': 'resources/aud/slide-08.m4a'},
+    {'name': 'resources/imgs/slides/slide-11.png', 'path': 'resources/imgs/slides/slide-11.png'},
+    {'name': 'resources/imgs/slides/slide-12.png', 'path': 'resources/imgs/slides/slide-12.png'},
+    {'name': 'resources/imgs/slides/slide-03.png', 'path': 'resources/imgs/slides/slide-03.png'},
+    {'name': 'resources/imgs/slides/slide-13.png', 'path': 'resources/imgs/slides/slide-13.png'},
+    {'name': 'resources/imgs/slides/slide-17.png', 'path': 'resources/imgs/slides/slide-17.png'},
     {'name': 'resources/aud/slide-10.m4a', 'path': 'resources/aud/slide-10.m4a'},
-    {'name': 'resources/imgs/slides/slide-00-title.png', 'path': 'resources/imgs/slides/slide-00-title.png'}
+    {'name': 'resources/aud/slide-18.m4a', 'path': 'resources/aud/slide-18.m4a'},
+    {'name': 'resources/seqs/conditions.csv', 'path': 'resources/seqs/conditions.csv'},
+    {'name': 'resources/imgs/slides/slide-06.png', 'path': 'resources/imgs/slides/slide-06.png'}
   ]
 });
 
@@ -316,6 +315,13 @@ async function experimentInit() {
       sizes = [[0.19, 0.288], [0.19, 0.288], [0.18, 0.27], [0.193, 0.278]];
       return make_boxes(names, xys, sizes);
   }
+  function get_slide03b() {
+      var names, sizes, xys;
+      names = ["happy", "angry"];
+      xys = [[(- 0.212), (- 0.153)], [0.18, (- 0.143)]];
+      sizes = [[0.19, 0.28], [0.196, 0.27]];
+      return make_boxes(names, xys, sizes);
+  }
   function get_slide05() {
       var names, sizes, xys;
       names = ["table", "chair", "desk", "drawer"];
@@ -358,7 +364,7 @@ async function experimentInit() {
       sizes = [[0.2, 0.23], [0.2, 0.23], [0.2, 0.23], [0.2, 0.23]];
       return make_boxes(names, xys, sizes);
   }
-  q_slides = {"slide-02": get_slide02, "slide-03": get_slide03, "slide-05": get_slide05, "slide-11": get_slide11, "slide-12": get_slide11, "slide-13": get_slide11, "slide-18": get_slide18, "slide-19": get_slide18, "slide-20": get_slide20, "slide-22": get_slide22, "slide-23": get_slide23, "slide-24": get_slide23};
+  q_slides = {"slide-02": get_slide02, "slide-03": get_slide03, "slide-03b": get_slide03b, "slide-05": get_slide05, "slide-11": get_slide11, "slide-12": get_slide11, "slide-13": get_slide11, "slide-18": get_slide18, "slide-19": get_slide18, "slide-20": get_slide20, "slide-22": get_slide22, "slide-23": get_slide23, "slide-24": get_slide23};
   
   begin_text = new visual.TextStim({
     win: psychoJS.window,
@@ -393,7 +399,7 @@ async function experimentInit() {
   y_offset = (- 0.02);
   control_scores = [];
   current_total_score = 0;
-  SLIDE_GROUPS = [null, [1, 2], [3], [4, 5], [6, 7, 8, 9, 10, 11], [12], [13], [14, 15, 16, 17, 18], [19], [20], [21, 22], [23], [24]];
+  SLIDE_GROUPS = [null, [1, 2], [3], [301], [4, 5], [6, 7, 8, 9, 10, 11], [12], [13], [14, 15, 16, 17, 18], [19], [20], [21, 22], [23], [24]];
   
   trial_text = new visual.TextStim({
     win: psychoJS.window,
@@ -683,6 +689,7 @@ var mouse_over;
 var slide_t;
 var response;
 var response_time;
+var slide_name;
 var slide_nums;
 var slides;
 var n_slides;
@@ -708,12 +715,17 @@ function trialRoutineBegin(snapshot) {
     slide_t = 0;
     response = null;
     response_time = null;
+    slide_name = "";
     slide_nums = SLIDE_GROUPS[Number.parseInt(trialNum)];
     slides = [];
     for (var i, _pj_c = 0, _pj_a = slide_nums, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         i = _pj_a[_pj_c];
         i = ((i > 9) ? i : `0${i}`);
-        slides.push(make_slide(`slide-${i}`));
+        if ((i === 301)) {
+            i = "03b";
+        }
+        slide_name = `slide-${i}`;
+        slides.push(make_slide(slide_name));
     }
     n_slides = slide_nums.length;
     idx = 0;

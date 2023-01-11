@@ -4,3 +4,4 @@ dev-*/
 *.map
 *.py
 
+.DS_Store
