@@ -256,6 +256,10 @@ var y_offset;
 var control_scores;
 var current_total_score;
 var SLIDE_GROUPS;
+var aimgs;
+var starts;
+var ends;
+var all_anims;
 var trial_text;
 var globalClock;
 var routineTimer;
@@ -393,6 +397,20 @@ async function experimentInit() {
   current_total_score = 0;
   SLIDE_GROUPS = [null, [1, 2], [3], [301], [4, 5], [6, 7, 8, 9, 10, 11], [12], [13], [14, 15, 16, 17, 18], [19], [20], [21, 22], [23], [24]];
   
+  aimgs = null;
+  starts = null;
+  ends = null;
+  function anim_03b() {
+      var end_times, names, sizes, start_times, xys;
+      names = ["box_pattern"];
+      xys = [[(- 0.009), 0.19]];
+      sizes = [[0.5, 0.26]];
+      start_times = [2];
+      end_times = [5];
+      return [make_boxes(names, xys, sizes, 1, "red"), start_times, end_times];
+  }
+  all_anims = {"slide-03b": anim_03b};
+  
   trial_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'trial_text',
@@ -401,7 +419,7 @@ async function experimentInit() {
     units: undefined, 
     pos: [0.6, 0], height: 0.02,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color('black'),  opacity: undefined,
-    depth: -1.0 
+    depth: -2.0 
   });
   
   // Create some handy timers
@@ -692,6 +710,9 @@ var idx;
 var idx_prev;
 var play_6b_once;
 var auto_9_once;
+var _pj;
+var key;
+var run_anim;
 var trialComponents;
 function trialRoutineBegin(snapshot) {
   return async function () {
@@ -748,6 +769,32 @@ function trialRoutineBegin(snapshot) {
         qn_num = _pj_a[_pj_c];
         if ((((Number.parseInt(testQn) === qn_num) && (control_scores.slice((- 1))[0] !== 1)) && (control_scores.slice((- 2))[0] !== 1))) {
             continueRoutine = false;
+        }
+    }
+    
+    var _pj;
+    function _pj_snippets(container) {
+        function in_es6(left, right) {
+            if (((right instanceof Array) || ((typeof right) === "string"))) {
+                return (right.indexOf(left) > (- 1));
+            } else {
+                if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {
+                    return right.has(left);
+                } else {
+                    return (left in right);
+                }
+            }
+        }
+        container["in_es6"] = in_es6;
+        return container;
+    }
+    _pj = {};
+    _pj_snippets(_pj);
+    key = slide_name;
+    if ((USE_AUDIO && _pj.in_es6(key, all_anims))) {
+        run_anim = true;
+        if ((key === "slide-03b")) {
+            [aimgs, starts, ends] = all_anims[key]();
         }
     }
     
@@ -899,6 +946,18 @@ function trialRoutineEachFrame() {
     ;
     }
     
+    if (run_anim) {
+        for (var i, _pj_c = 0, _pj_a = util.range(aimgs.length), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+            i = _pj_a[_pj_c];
+            if ((t >= starts[i])) {
+                aimgs[i].autoDraw = true;
+            }
+            if ((t >= ends[i])) {
+                aimgs[i].autoDraw = false;
+            }
+        }
+    }
+    
     
     // *trial_text* updates
     if (t >= 0.0 && trial_text.status === PsychoJS.Status.NOT_STARTED) {
@@ -975,6 +1034,10 @@ function trialRoutineEnd() {
     }
     trials.addData("response_time", response_time);
     
+    if (run_anim) {
+        run_anim = false;
+    }
+    
     // the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -1019,6 +1082,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   

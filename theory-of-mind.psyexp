@@ -81,6 +81,23 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="trial_code" valType="code"/>
       </CodeComponent>
+      <CodeComponent name="trial_anim">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="aimgs = None &amp;#10;starts = None &amp;#10;ends = None  &amp;#10;&amp;#10;def anim_03b(): &amp;#10;    # Slide 03b&amp;#10;    #names = [&quot;box_pattern&quot;, &quot;box_options&quot;] &amp;#10;    #xys = [(0.015, 0.15), (0, -0.22)] &amp;#10;    #sizes = [(0.22, 0.25), (0.9, 0.30)] &amp;#10;    #start_times = [2, 6] &amp;#10;    #end_times = [5, 8]&amp;#10;    &amp;#10;    names = [&quot;box_pattern&quot;] &amp;#10;    xys = [(-0.009, 0.19)] &amp;#10;    sizes = [(0.5, 0.26)]&amp;#10;    start_times = [2] &amp;#10;    end_times = [5]&amp;#10;    return make_boxes(names, xys, sizes, 1, &quot;red&quot;), start_times, end_times&amp;#10;    &amp;#10;all_anims = {&amp;#10;    &quot;slide-03b&quot;: anim_03b,&amp;#10;   &amp;#10;}&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="aimgs = null;&amp;#10;starts = null;&amp;#10;ends = null;&amp;#10;function anim_03b() {&amp;#10;    var end_times, names, sizes, start_times, xys;&amp;#10;    names = [&quot;box_pattern&quot;];&amp;#10;    xys = [[(- 0.009), 0.19]];&amp;#10;    sizes = [[0.5, 0.26]];&amp;#10;    start_times = [2];&amp;#10;    end_times = [5];&amp;#10;    return [make_boxes(names, xys, sizes, 1, &quot;red&quot;), start_times, end_times];&amp;#10;}&amp;#10;all_anims = {&quot;slide-03b&quot;: anim_03b};&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;key = slide_name;&amp;#10;if ((USE_AUDIO &amp;&amp; _pj.in_es6(key, all_anims))) {&amp;#10;    run_anim = true;&amp;#10;    if ((key === &quot;slide-03b&quot;)) {&amp;#10;        [aimgs, starts, ends] = all_anims[key]();&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;key = slide_name&amp;#10;&amp;#10;if USE_AUDIO and key in all_anims: &amp;#10;    run_anim = True &amp;#10;    if key == 'slide-03b':&amp;#10;        aimgs, starts, ends = all_anims[key]()&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="#if run_anim:&amp;#10;#    for i in range(len(aimgs)):&amp;#10;#        if t &gt;= starts[i]: &amp;#10;#            aimgs[i].autoDraw = True &amp;#10;#        if t &gt;= ends[i]: &amp;#10;#            aimgs[i].autoDraw = False&amp;#10;&amp;#10;if run_anim:&amp;#10;    for i in range(len(aimgs)):&amp;#10;        if t &gt;= starts[i]: &amp;#10;            aimgs[i].autoDraw = True &amp;#10;        if t &gt;= ends[i]: &amp;#10;            aimgs[i].autoDraw = False&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="if (run_anim) {&amp;#10;    for (var i, _pj_c = 0, _pj_a = util.range(aimgs.length), _pj_b = _pj_a.length; (_pj_c &lt; _pj_b); _pj_c += 1) {&amp;#10;        i = _pj_a[_pj_c];&amp;#10;        if ((t &gt;= starts[i])) {&amp;#10;            aimgs[i].autoDraw = true;&amp;#10;        }&amp;#10;        if ((t &gt;= ends[i])) {&amp;#10;            aimgs[i].autoDraw = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if (run_anim) {&amp;#10;    run_anim = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if run_anim:&amp;#10;    run_anim = False&amp;#10;" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="trial_anim" valType="code"/>
+      </CodeComponent>
       <TextComponent name="trial_text">
         <Param name="color" updates="constant" val="black" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -186,7 +203,7 @@
       </TextComponent>
     </Routine>
     <Routine name="slide_title">
-      <CodeComponent name="slide_title">
+      <CodeComponent name="slide_title_2">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="#for title slide and 1st trial slide&amp;#10;#NEXT_BUTTON_POS = (0, -0.2)&amp;#10;&amp;#10;#for trial slides&amp;#10;NEXT_BUTTON_POS = (0, -0.38)&amp;#10;#NEXT_BUTTON_SIZE = (0.215, 0.1)&amp;#10;NEXT_BUTTON_SIZE = (((0.1 / 127) * 192), 0.1)&amp;#10;NEXT_BUTTON = make_img(&quot;next&quot;, f&quot;{IMGS_DIR}/next.png&quot;, NEXT_POS, NEXT_SIZE, None)&amp;#10;#NEXT_BUTTON = make_button(&quot;next&quot;, &quot;Next&quot;, NEXT_BUTTON_POS, NEXT_BUTTON_SIZE)&amp;#10;" valType="extendedCode"/>
@@ -201,7 +218,7 @@
         <Param name="End JS Routine" updates="constant" val="slide.autoDraw = false;&amp;#10;NEXT_BUTTON.autoDraw = false;&amp;#10;if (USE_AUDIO) {&amp;#10;    SOUND.stop();&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="End Routine" updates="constant" val="&amp;#10;slide.autoDraw = False&amp;#10;NEXT_BUTTON.autoDraw = False&amp;#10;&amp;#10;if USE_AUDIO:&amp;#10;    SOUND.stop()&amp;#10;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="slide_title" valType="code"/>
+        <Param name="name" updates="None" val="slide_title_2" valType="code"/>
       </CodeComponent>
       <TextComponent name="slide_title_text">
         <Param name="color" updates="constant" val="black" valType="color"/>
