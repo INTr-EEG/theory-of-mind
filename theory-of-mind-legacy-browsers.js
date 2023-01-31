@@ -119,9 +119,6 @@ flowScheduler.add(experimentInit);
 flowScheduler.add(beginRoutineBegin());
 flowScheduler.add(beginRoutineEachFrame());
 flowScheduler.add(beginRoutineEnd());
-flowScheduler.add(slide_titleRoutineBegin());
-flowScheduler.add(slide_titleRoutineEachFrame());
-flowScheduler.add(slide_titleRoutineEnd());
 const trialsLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(trialsLoopBegin(trialsLoopScheduler));
 flowScheduler.add(trialsLoopScheduler);
@@ -135,62 +132,62 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/imgs/slides/slide-15.png', 'path': 'resources/imgs/slides/slide-15.png'},
-    {'name': 'resources/imgs/slides/slide-03b.png', 'path': 'resources/imgs/slides/slide-03b.png'},
-    {'name': 'resources/aud/slide-16.m4a', 'path': 'resources/aud/slide-16.m4a'},
-    {'name': 'resources/aud/slide-17.m4a', 'path': 'resources/aud/slide-17.m4a'},
-    {'name': 'resources/aud/slide-24.m4a', 'path': 'resources/aud/slide-24.m4a'},
-    {'name': 'resources/imgs/slides/slide-07.png', 'path': 'resources/imgs/slides/slide-07.png'},
-    {'name': 'resources/aud/slide-11.m4a', 'path': 'resources/aud/slide-11.m4a'},
-    {'name': 'resources/aud/slide-04.m4a', 'path': 'resources/aud/slide-04.m4a'},
+    {'name': 'resources/seqs/conditions.csv', 'path': 'resources/seqs/conditions.csv'},
+    {'name': 'resources/imgs/slides/slide-19.png', 'path': 'resources/imgs/slides/slide-19.png'},
     {'name': 'resources/imgs/slides/slide-20.png', 'path': 'resources/imgs/slides/slide-20.png'},
-    {'name': 'resources/aud/slide-06.m4a', 'path': 'resources/aud/slide-06.m4a'},
-    {'name': 'resources/aud/slide-23.m4a', 'path': 'resources/aud/slide-23.m4a'},
-    {'name': 'resources/imgs/slides/slide-18.png', 'path': 'resources/imgs/slides/slide-18.png'},
-    {'name': 'resources/aud/slide-05.m4a', 'path': 'resources/aud/slide-05.m4a'},
-    {'name': 'resources/imgs/slides/slide-21.png', 'path': 'resources/imgs/slides/slide-21.png'},
-    {'name': 'resources/imgs/slides/slide-09.png', 'path': 'resources/imgs/slides/slide-09.png'},
-    {'name': 'resources/imgs/slides/slide-23.png', 'path': 'resources/imgs/slides/slide-23.png'},
-    {'name': 'resources/aud/slide-19.m4a', 'path': 'resources/aud/slide-19.m4a'},
-    {'name': 'resources/imgs/slides/slide-22.png', 'path': 'resources/imgs/slides/slide-22.png'},
-    {'name': 'resources/aud/slide-12.m4a', 'path': 'resources/aud/slide-12.m4a'},
-    {'name': 'resources/aud/slide-22.m4a', 'path': 'resources/aud/slide-22.m4a'},
+    {'name': 'resources/aud/slide-24.m4a', 'path': 'resources/aud/slide-24.m4a'},
+    {'name': 'resources/imgs/slides/slide-11.png', 'path': 'resources/imgs/slides/slide-11.png'},
+    {'name': 'resources/imgs/slides/slide-00-intr.png', 'path': 'resources/imgs/slides/slide-00-intr.png'},
+    {'name': 'resources/aud/slide-18.m4a', 'path': 'resources/aud/slide-18.m4a'},
+    {'name': 'resources/imgs/slides/slide-02.png', 'path': 'resources/imgs/slides/slide-02.png'},
+    {'name': 'resources/imgs/slides/slide-03.png', 'path': 'resources/imgs/slides/slide-03.png'},
+    {'name': 'resources/aud/slide-14.m4a', 'path': 'resources/aud/slide-14.m4a'},
     {'name': 'resources/imgs/slides/slide-14.png', 'path': 'resources/imgs/slides/slide-14.png'},
     {'name': 'resources/aud/slide-01.m4a', 'path': 'resources/aud/slide-01.m4a'},
-    {'name': 'resources/imgs/slides/slide-16.png', 'path': 'resources/imgs/slides/slide-16.png'},
-    {'name': 'resources/imgs/next.png', 'path': 'resources/imgs/next.png'},
-    {'name': 'resources/aud/slide-13.m4a', 'path': 'resources/aud/slide-13.m4a'},
-    {'name': 'resources/aud/slide-14.m4a', 'path': 'resources/aud/slide-14.m4a'},
+    {'name': 'resources/imgs/slides/slide-22.png', 'path': 'resources/imgs/slides/slide-22.png'},
+    {'name': 'resources/imgs/slides/slide-21.png', 'path': 'resources/imgs/slides/slide-21.png'},
+    {'name': 'resources/aud/slide-21.m4a', 'path': 'resources/aud/slide-21.m4a'},
+    {'name': 'resources/imgs/slides/slide-12.png', 'path': 'resources/imgs/slides/slide-12.png'},
     {'name': 'resources/imgs/slides/slide-01.png', 'path': 'resources/imgs/slides/slide-01.png'},
-    {'name': 'resources/imgs/slides/slide-10.png', 'path': 'resources/imgs/slides/slide-10.png'},
-    {'name': 'resources/imgs/slides/slide-02.png', 'path': 'resources/imgs/slides/slide-02.png'},
-    {'name': 'resources/imgs/slides/slide-19.png', 'path': 'resources/imgs/slides/slide-19.png'},
+    {'name': 'resources/aud/slide-03.m4a', 'path': 'resources/aud/slide-03.m4a'},
+    {'name': 'resources/imgs/slides/slide-05.png', 'path': 'resources/imgs/slides/slide-05.png'},
+    {'name': 'resources/aud/slide-12.m4a', 'path': 'resources/aud/slide-12.m4a'},
+    {'name': 'resources/aud/slide-15.m4a', 'path': 'resources/aud/slide-15.m4a'},
+    {'name': 'resources/imgs/slides/slide-24.png', 'path': 'resources/imgs/slides/slide-24.png'},
+    {'name': 'resources/imgs/slides/slide-15.png', 'path': 'resources/imgs/slides/slide-15.png'},
+    {'name': 'resources/aud/slide-03b.m4a', 'path': 'resources/aud/slide-03b.m4a'},
+    {'name': 'resources/aud/slide-06.m4a', 'path': 'resources/aud/slide-06.m4a'},
+    {'name': 'resources/imgs/slides/slide-08.png', 'path': 'resources/imgs/slides/slide-08.png'},
+    {'name': 'resources/imgs/slides/slide-07.png', 'path': 'resources/imgs/slides/slide-07.png'},
+    {'name': 'resources/imgs/slides/slide-18.png', 'path': 'resources/imgs/slides/slide-18.png'},
+    {'name': 'resources/imgs/slides/slide-04.png', 'path': 'resources/imgs/slides/slide-04.png'},
+    {'name': 'resources/aud/slide-20.m4a', 'path': 'resources/aud/slide-20.m4a'},
+    {'name': 'resources/aud/slide-16.m4a', 'path': 'resources/aud/slide-16.m4a'},
+    {'name': 'resources/aud/slide-23.m4a', 'path': 'resources/aud/slide-23.m4a'},
+    {'name': 'resources/imgs/slides/slide-00-title.png', 'path': 'resources/imgs/slides/slide-00-title.png'},
+    {'name': 'resources/imgs/slides/slide-16.png', 'path': 'resources/imgs/slides/slide-16.png'},
+    {'name': 'resources/aud/slide-08.m4a', 'path': 'resources/aud/slide-08.m4a'},
+    {'name': 'resources/aud/slide-13.m4a', 'path': 'resources/aud/slide-13.m4a'},
     {'name': 'resources/aud/slide-00-intr.m4a', 'path': 'resources/aud/slide-00-intr.m4a'},
     {'name': 'resources/aud/slide-02.m4a', 'path': 'resources/aud/slide-02.m4a'},
-    {'name': 'resources/aud/slide-15.m4a', 'path': 'resources/aud/slide-15.m4a'},
-    {'name': 'resources/aud/slide-00-title.m4a', 'path': 'resources/aud/slide-00-title.m4a'},
-    {'name': 'resources/aud/slide-03.m4a', 'path': 'resources/aud/slide-03.m4a'},
-    {'name': 'resources/aud/slide-03b.m4a', 'path': 'resources/aud/slide-03b.m4a'},
-    {'name': 'resources/aud/slide-07.m4a', 'path': 'resources/aud/slide-07.m4a'},
-    {'name': 'resources/imgs/slides/slide-00-title.png', 'path': 'resources/imgs/slides/slide-00-title.png'},
-    {'name': 'resources/imgs/slides/slide-08.png', 'path': 'resources/imgs/slides/slide-08.png'},
-    {'name': 'resources/imgs/slides/slide-24.png', 'path': 'resources/imgs/slides/slide-24.png'},
-    {'name': 'resources/imgs/slides/slide-05.png', 'path': 'resources/imgs/slides/slide-05.png'},
-    {'name': 'resources/aud/slide-06b.m4a', 'path': 'resources/aud/slide-06b.m4a'},
-    {'name': 'resources/aud/slide-20.m4a', 'path': 'resources/aud/slide-20.m4a'},
-    {'name': 'resources/imgs/slides/slide-04.png', 'path': 'resources/imgs/slides/slide-04.png'},
-    {'name': 'resources/aud/slide-21.m4a', 'path': 'resources/aud/slide-21.m4a'},
-    {'name': 'resources/imgs/slides/slide-00-intr.png', 'path': 'resources/imgs/slides/slide-00-intr.png'},
-    {'name': 'resources/aud/slide-08.m4a', 'path': 'resources/aud/slide-08.m4a'},
-    {'name': 'resources/imgs/slides/slide-11.png', 'path': 'resources/imgs/slides/slide-11.png'},
-    {'name': 'resources/imgs/slides/slide-12.png', 'path': 'resources/imgs/slides/slide-12.png'},
-    {'name': 'resources/imgs/slides/slide-03.png', 'path': 'resources/imgs/slides/slide-03.png'},
+    {'name': 'resources/aud/slide-11.m4a', 'path': 'resources/aud/slide-11.m4a'},
     {'name': 'resources/imgs/slides/slide-13.png', 'path': 'resources/imgs/slides/slide-13.png'},
-    {'name': 'resources/imgs/slides/slide-17.png', 'path': 'resources/imgs/slides/slide-17.png'},
+    {'name': 'resources/aud/slide-22.m4a', 'path': 'resources/aud/slide-22.m4a'},
+    {'name': 'resources/imgs/slides/slide-06.png', 'path': 'resources/imgs/slides/slide-06.png'},
+    {'name': 'resources/aud/slide-05.m4a', 'path': 'resources/aud/slide-05.m4a'},
+    {'name': 'resources/imgs/slides/slide-10.png', 'path': 'resources/imgs/slides/slide-10.png'},
+    {'name': 'resources/aud/slide-00-title.m4a', 'path': 'resources/aud/slide-00-title.m4a'},
+    {'name': 'resources/aud/slide-06b.m4a', 'path': 'resources/aud/slide-06b.m4a'},
+    {'name': 'resources/imgs/next.png', 'path': 'resources/imgs/next.png'},
     {'name': 'resources/aud/slide-10.m4a', 'path': 'resources/aud/slide-10.m4a'},
-    {'name': 'resources/aud/slide-18.m4a', 'path': 'resources/aud/slide-18.m4a'},
-    {'name': 'resources/seqs/conditions.csv', 'path': 'resources/seqs/conditions.csv'},
-    {'name': 'resources/imgs/slides/slide-06.png', 'path': 'resources/imgs/slides/slide-06.png'}
+    {'name': 'resources/aud/slide-17.m4a', 'path': 'resources/aud/slide-17.m4a'},
+    {'name': 'resources/imgs/slides/slide-09.png', 'path': 'resources/imgs/slides/slide-09.png'},
+    {'name': 'resources/aud/slide-19.m4a', 'path': 'resources/aud/slide-19.m4a'},
+    {'name': 'resources/aud/slide-07.m4a', 'path': 'resources/aud/slide-07.m4a'},
+    {'name': 'resources/imgs/slides/slide-03b.png', 'path': 'resources/imgs/slides/slide-03b.png'},
+    {'name': 'resources/imgs/slides/slide-17.png', 'path': 'resources/imgs/slides/slide-17.png'},
+    {'name': 'resources/aud/slide-04.m4a', 'path': 'resources/aud/slide-04.m4a'},
+    {'name': 'resources/imgs/slides/slide-23.png', 'path': 'resources/imgs/slides/slide-23.png'}
   ]
 });
 
@@ -235,6 +232,9 @@ var SLIDE_SIZE;
 var NEXT_POS;
 var NEXT_SIZE;
 var NEXT;
+var NEXT_BUTTON_POS;
+var NEXT_BUTTON_SIZE;
+var NEXT_BUTTON;
 var REPLAY_POS;
 var REPLAY_SIZE;
 var REPLAY;
@@ -246,11 +246,6 @@ var MOUSE_L_prev;
 var SOUND;
 var q_slides;
 var begin_text;
-var slide_titleClock;
-var NEXT_BUTTON_POS;
-var NEXT_BUTTON_SIZE;
-var NEXT_BUTTON;
-var slide_title_text;
 var trialClock;
 var y_offset;
 var control_scores;
@@ -287,6 +282,9 @@ async function experimentInit() {
   NEXT_POS = [0.573, 0.315];
   NEXT_SIZE = [0.165, 0.075];
   NEXT = make_rect("next", NEXT_POS, NEXT_SIZE, CLICK_BOX_OPACITY);
+  NEXT_BUTTON_POS = [0, (- 0.38)];
+  NEXT_BUTTON_SIZE = [((0.1 / 127) * 192), 0.1];
+  NEXT_BUTTON = make_img("next", `${IMGS_DIR}/next.png`, NEXT_POS, NEXT_SIZE, null);
   REPLAY_POS = [(- 0.376), 0.265];
   REPLAY_SIZE = [0.165, 0.075];
   REPLAY = make_rect("replay", REPLAY_POS, REPLAY_SIZE, CLICK_BOX_OPACITY);
@@ -371,23 +369,6 @@ async function experimentInit() {
     pos: [0.6, 0], height: 0.02,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color('black'),  opacity: undefined,
     depth: -3.0 
-  });
-  
-  // Initialize components for Routine "slide_title"
-  slide_titleClock = new util.Clock();
-  NEXT_BUTTON_POS = [0, (- 0.38)];
-  NEXT_BUTTON_SIZE = [((0.1 / 127) * 192), 0.1];
-  NEXT_BUTTON = make_img("next", `${IMGS_DIR}/next.png`, NEXT_POS, NEXT_SIZE, null);
-  
-  slide_title_text = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'slide_title_text',
-    text: '',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0.6, 0], height: 0.02,  wrapWidth: undefined, ori: 0.0,
-    color: new util.Color('black'),  opacity: undefined,
-    depth: -1.0 
   });
   
   // Initialize components for Routine "trial"
@@ -540,116 +521,6 @@ function beginRoutineEnd() {
     }
     
     // the Routine "begin" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
-    return Scheduler.Event.NEXT;
-  };
-}
-
-
-var slide_titleComponents;
-function slide_titleRoutineBegin(snapshot) {
-  return async function () {
-    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
-    
-    //------Prepare to start Routine 'slide_title'-------
-    t = 0;
-    slide_titleClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    slide = make_slide(`slide-00-title`);
-    slide.autoDraw = true;
-    NEXT_BUTTON.pos = [0, (- 0.2)];
-    NEXT_BUTTON.autoDraw = true;
-    if (USE_AUDIO) {
-        aud_file = `${AUD_DIR}/slide-00-title.m4a`;
-        SOUND = make_sound("slide-00-title", aud_file);
-        SOUND_DUR = SOUND.getDuration();
-        SOUND_T = 0;
-        SOUND.play();
-    }
-    
-    // keep track of which components have finished
-    slide_titleComponents = [];
-    slide_titleComponents.push(slide_title_text);
-    
-    slide_titleComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function slide_titleRoutineEachFrame() {
-  return async function () {
-    //------Loop for each frame of Routine 'slide_title'-------
-    // get current time
-    t = slide_titleClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    MOUSE_L = MOUSE.getPressed()[0];
-    if ((MOUSE_L_prev !== MOUSE_L)) {
-        MOUSE_L_prev = MOUSE_L;
-        if (((MOUSE_L === 1) && NEXT_BUTTON.contains(MOUSE))) {
-            continueRoutine = false;
-        }
-    }
-    
-    
-    // *slide_title_text* updates
-    if (t >= 0.0 && slide_title_text.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      slide_title_text.tStart = t;  // (not accounting for frame time here)
-      slide_title_text.frameNStart = frameN;  // exact frame index
-      
-      slide_title_text.setAutoDraw(true);
-    }
-
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    slide_titleComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-      }
-    });
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function slide_titleRoutineEnd() {
-  return async function () {
-    //------Ending Routine 'slide_title'-------
-    slide_titleComponents.forEach( function(thisComponent) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    });
-    slide.autoDraw = false;
-    NEXT_BUTTON.autoDraw = false;
-    if (USE_AUDIO) {
-        SOUND.stop();
-    }
-    
-    // the Routine "slide_title" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     return Scheduler.Event.NEXT;
