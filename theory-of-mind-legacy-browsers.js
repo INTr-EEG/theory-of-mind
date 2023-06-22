@@ -5,16 +5,9 @@
 
 // store info about the experiment session:
 let expName = 'theory-of-mind';  // from the Builder filename that created this script
-let expInfo = {
-    'participant': '',
-    'School': '',
-    'Audio': ["Yes", "No"],
-    'Debug': ["No", "Yes"],
-    'Show boxes': ["No", "Yes"],
-};
+let expInfo = {'participant': '', 'School': '', 'Audio': ['Yes', 'No'], 'Debug': ['No', 'Yes'], 'Show boxes': ['No', 'Yes']};
 
 // Start code blocks for 'Before Experiment'
-// Run 'Before Experiment' code from functions_g
 
 function make_button(name, text, pos, size) {
     return new visual.ButtonStim({"win": psychoJS.window, "text": text, "pos": pos, "letterHeight": 0.05, "size": size, "borderWidth": 0.005, "fillColor": "lightgrey", "borderColor": "darkgrey", "color": "black", "colorSpace": "rgb", "opacity": null, "bold": true, "italic": false, "padding": null, "anchor": "center", "name": name});
@@ -139,78 +132,74 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'resources/imgs/slides/slide-05.png', 'path': 'resources/imgs/slides/slide-05.png'},
-    {'name': 'resources/imgs/slides/slide-10.png', 'path': 'resources/imgs/slides/slide-10.png'},
-    {'name': 'resources/aud/slide-13.m4a', 'path': 'resources/aud/slide-13.m4a'},
+    {'name': 'resources/imgs/slides/slide-12.png', 'path': 'resources/imgs/slides/slide-12.png'},
+    {'name': 'resources/aud/slide-18.m4a', 'path': 'resources/aud/slide-18.m4a'},
     {'name': 'resources/imgs/slides/slide-04.png', 'path': 'resources/imgs/slides/slide-04.png'},
     {'name': 'resources/imgs/slides/slide-23.png', 'path': 'resources/imgs/slides/slide-23.png'},
-    {'name': 'resources/aud/slide-16.m4a', 'path': 'resources/aud/slide-16.m4a'},
-    {'name': 'resources/imgs/slides/slide-00-title.png', 'path': 'resources/imgs/slides/slide-00-title.png'},
-    {'name': 'resources/aud/slide-10.m4a', 'path': 'resources/aud/slide-10.m4a'},
-    {'name': 'resources/aud/slide-12.m4a', 'path': 'resources/aud/slide-12.m4a'},
-    {'name': 'resources/imgs/slides/slide-12.png', 'path': 'resources/imgs/slides/slide-12.png'},
-    {'name': 'resources/imgs/slides/slide-06.png', 'path': 'resources/imgs/slides/slide-06.png'},
-    {'name': 'resources/seqs/conditions.csv', 'path': 'resources/seqs/conditions.csv'},
-    {'name': 'resources/aud/slide-19.m4a', 'path': 'resources/aud/slide-19.m4a'},
-    {'name': 'resources/aud/slide-06.m4a', 'path': 'resources/aud/slide-06.m4a'},
-    {'name': 'resources/imgs/slides/slide-00-intr.png', 'path': 'resources/imgs/slides/slide-00-intr.png'},
-    {'name': 'resources/imgs/slides/slide-24.png', 'path': 'resources/imgs/slides/slide-24.png'},
-    {'name': 'resources/aud/slide-22.m4a', 'path': 'resources/aud/slide-22.m4a'},
-    {'name': 'resources/imgs/slides/slide-02.png', 'path': 'resources/imgs/slides/slide-02.png'},
-    {'name': 'resources/aud/slide-00-title.m4a', 'path': 'resources/aud/slide-00-title.m4a'},
-    {'name': 'resources/aud/slide-05.m4a', 'path': 'resources/aud/slide-05.m4a'},
-    {'name': 'resources/imgs/slides/slide-14.png', 'path': 'resources/imgs/slides/slide-14.png'},
-    {'name': 'resources/aud/slide-24.m4a', 'path': 'resources/aud/slide-24.m4a'},
-    {'name': 'resources/imgs/slides/slide-21.png', 'path': 'resources/imgs/slides/slide-21.png'},
-    {'name': 'resources/imgs/slides/slide-03.png', 'path': 'resources/imgs/slides/slide-03.png'},
+    {'name': 'resources/aud/slide-04.m4a', 'path': 'resources/aud/slide-04.m4a'},
+    {'name': 'resources/imgs/slides/slide-05.png', 'path': 'resources/imgs/slides/slide-05.png'},
     {'name': 'resources/imgs/slides/slide-18.png', 'path': 'resources/imgs/slides/slide-18.png'},
-    {'name': 'resources/imgs/slides/slide-01.png', 'path': 'resources/imgs/slides/slide-01.png'},
-    {'name': 'resources/aud/slide-14.m4a', 'path': 'resources/aud/slide-14.m4a'},
-    {'name': 'resources/imgs/slides/slide-20.png', 'path': 'resources/imgs/slides/slide-20.png'},
+    {'name': 'resources/aud/slide-12.m4a', 'path': 'resources/aud/slide-12.m4a'},
     {'name': 'resources/imgs/slides/slide-16.png', 'path': 'resources/imgs/slides/slide-16.png'},
-    {'name': 'resources/imgs/slides/slide-13.png', 'path': 'resources/imgs/slides/slide-13.png'},
-    {'name': 'resources/aud/slide-15.m4a', 'path': 'resources/aud/slide-15.m4a'},
-    {'name': 'resources/aud/slide-21.m4a', 'path': 'resources/aud/slide-21.m4a'},
-    {'name': 'resources/imgs/slides/slide-07.png', 'path': 'resources/imgs/slides/slide-07.png'},
-    {'name': 'resources/imgs/slides/slide-08.png', 'path': 'resources/imgs/slides/slide-08.png'},
-    {'name': 'resources/imgs/slides/slide-19.png', 'path': 'resources/imgs/slides/slide-19.png'},
-    {'name': 'resources/aud/slide-03b.m4a', 'path': 'resources/aud/slide-03b.m4a'},
-    {'name': 'resources/imgs/slides/slide-11.png', 'path': 'resources/imgs/slides/slide-11.png'},
+    {'name': 'resources/aud/slide-20.m4a', 'path': 'resources/aud/slide-20.m4a'},
+    {'name': 'resources/imgs/slides/slide-01.png', 'path': 'resources/imgs/slides/slide-01.png'},
+    {'name': 'resources/imgs/next.png', 'path': 'resources/imgs/next.png'},
+    {'name': 'resources/aud/slide-06b.m4a', 'path': 'resources/aud/slide-06b.m4a'},
+    {'name': 'resources/imgs/slides/slide-21.png', 'path': 'resources/imgs/slides/slide-21.png'},
     {'name': 'resources/aud/slide-00-intr.m4a', 'path': 'resources/aud/slide-00-intr.m4a'},
-    {'name': 'resources/aud/slide-08.m4a', 'path': 'resources/aud/slide-08.m4a'},
-    {'name': 'resources/imgs/slides/slide-09.png', 'path': 'resources/imgs/slides/slide-09.png'},
+    {'name': 'resources/imgs/slides/slide-15.png', 'path': 'resources/imgs/slides/slide-15.png'},
+    {'name': 'resources/imgs/slides/slide-22.png', 'path': 'resources/imgs/slides/slide-22.png'},
+    {'name': 'resources/aud/slide-19.m4a', 'path': 'resources/aud/slide-19.m4a'},
+    {'name': 'resources/seqs/conditions.csv', 'path': 'resources/seqs/conditions.csv'},
     {'name': 'resources/aud/slide-02.m4a', 'path': 'resources/aud/slide-02.m4a'},
-    {'name': 'resources/aud/slide-11.m4a', 'path': 'resources/aud/slide-11.m4a'},
+    {'name': 'resources/aud/slide-08.m4a', 'path': 'resources/aud/slide-08.m4a'},
+    {'name': 'resources/imgs/slides/slide-03b.png', 'path': 'resources/imgs/slides/slide-03b.png'},
+    {'name': 'resources/imgs/slides/slide-00-intr.png', 'path': 'resources/imgs/slides/slide-00-intr.png'},
+    {'name': 'resources/aud/slide-10.m4a', 'path': 'resources/aud/slide-10.m4a'},
+    {'name': 'resources/imgs/slides/slide-24.png', 'path': 'resources/imgs/slides/slide-24.png'},
+    {'name': 'resources/imgs/slides/slide-07.png', 'path': 'resources/imgs/slides/slide-07.png'},
+    {'name': 'resources/aud/slide-03.m4a', 'path': 'resources/aud/slide-03.m4a'},
+    {'name': 'resources/aud/slide-00-title.m4a', 'path': 'resources/aud/slide-00-title.m4a'},
     {'name': 'resources/aud/slide-23.m4a', 'path': 'resources/aud/slide-23.m4a'},
+    {'name': 'resources/imgs/slides/slide-20.png', 'path': 'resources/imgs/slides/slide-20.png'},
+    {'name': 'resources/aud/slide-11.m4a', 'path': 'resources/aud/slide-11.m4a'},
+    {'name': 'resources/aud/slide-22.m4a', 'path': 'resources/aud/slide-22.m4a'},
+    {'name': 'resources/imgs/slides/slide-19.png', 'path': 'resources/imgs/slides/slide-19.png'},
+    {'name': 'resources/imgs/slides/slide-14.png', 'path': 'resources/imgs/slides/slide-14.png'},
+    {'name': 'resources/aud/slide-13.m4a', 'path': 'resources/aud/slide-13.m4a'},
+    {'name': 'resources/aud/slide-03b.m4a', 'path': 'resources/aud/slide-03b.m4a'},
+    {'name': 'resources/aud/slide-14.m4a', 'path': 'resources/aud/slide-14.m4a'},
+    {'name': 'resources/aud/slide-07.m4a', 'path': 'resources/aud/slide-07.m4a'},
+    {'name': 'resources/aud/slide-15.m4a', 'path': 'resources/aud/slide-15.m4a'},
+    {'name': 'resources/aud/slide-24.m4a', 'path': 'resources/aud/slide-24.m4a'},
+    {'name': 'resources/imgs/slides/slide-03.png', 'path': 'resources/imgs/slides/slide-03.png'},
+    {'name': 'resources/imgs/slides/slide-08.png', 'path': 'resources/imgs/slides/slide-08.png'},
+    {'name': 'resources/imgs/slides/slide-00-title.png', 'path': 'resources/imgs/slides/slide-00-title.png'},
+    {'name': 'resources/imgs/slides/slide-02.png', 'path': 'resources/imgs/slides/slide-02.png'},
+    {'name': 'resources/imgs/slides/slide-10.png', 'path': 'resources/imgs/slides/slide-10.png'},
+    {'name': 'resources/imgs/slides/slide-17.png', 'path': 'resources/imgs/slides/slide-17.png'},
     {'name': 'resources/aud/slide-01.m4a', 'path': 'resources/aud/slide-01.m4a'},
     {'name': 'resources/aud/slide-17.m4a', 'path': 'resources/aud/slide-17.m4a'},
-    {'name': 'resources/imgs/slides/slide-15.png', 'path': 'resources/imgs/slides/slide-15.png'},
-    {'name': 'resources/imgs/slides/slide-17.png', 'path': 'resources/imgs/slides/slide-17.png'},
-    {'name': 'resources/aud/slide-03.m4a', 'path': 'resources/aud/slide-03.m4a'},
-    {'name': 'resources/aud/slide-06b.m4a', 'path': 'resources/aud/slide-06b.m4a'},
-    {'name': 'resources/aud/slide-07.m4a', 'path': 'resources/aud/slide-07.m4a'},
-    {'name': 'resources/aud/slide-04.m4a', 'path': 'resources/aud/slide-04.m4a'},
-    {'name': 'resources/aud/slide-18.m4a', 'path': 'resources/aud/slide-18.m4a'},
-    {'name': 'resources/imgs/slides/slide-22.png', 'path': 'resources/imgs/slides/slide-22.png'},
-    {'name': 'resources/aud/slide-20.m4a', 'path': 'resources/aud/slide-20.m4a'},
-    {'name': 'resources/imgs/slides/slide-03b.png', 'path': 'resources/imgs/slides/slide-03b.png'},
-    {'name': 'resources/imgs/next.png', 'path': 'resources/imgs/next.png'}
+    {'name': 'resources/imgs/slides/slide-11.png', 'path': 'resources/imgs/slides/slide-11.png'},
+    {'name': 'resources/aud/slide-06.m4a', 'path': 'resources/aud/slide-06.m4a'},
+    {'name': 'resources/imgs/slides/slide-06.png', 'path': 'resources/imgs/slides/slide-06.png'},
+    {'name': 'resources/imgs/slides/slide-09.png', 'path': 'resources/imgs/slides/slide-09.png'},
+    {'name': 'resources/aud/slide-16.m4a', 'path': 'resources/aud/slide-16.m4a'},
+    {'name': 'resources/aud/slide-21.m4a', 'path': 'resources/aud/slide-21.m4a'},
+    {'name': 'resources/aud/slide-05.m4a', 'path': 'resources/aud/slide-05.m4a'},
+    {'name': 'resources/imgs/slides/slide-13.png', 'path': 'resources/imgs/slides/slide-13.png'}
   ]
 });
 
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
 
 
-var currentLoop;
 var frameDur;
 async function updateInfo() {
-  currentLoop = psychoJS.experiment;  // right now there are no loops
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2022.2.4';
+  expInfo['psychopyVersion'] = '2021.2.3';
   expInfo['OS'] = window.navigator.platform;
-
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["participant"]}_${expInfo["School"]}_${expName}_${expInfo["date"]}`);
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -272,7 +261,6 @@ var routineTimer;
 async function experimentInit() {
   // Initialize components for Routine "begin"
   beginClock = new util.Clock();
-  // Run 'Begin Experiment' code from begin_code
   expVersion = "2022.09.26";
   AUD_DIR = "resources/aud";
   IMGS_DIR = "resources/imgs";
@@ -307,7 +295,6 @@ async function experimentInit() {
   MOUSE_L_prev = 0;
   SOUND = null;
   
-  // Run 'Begin Experiment' code from specs_TOM
   function get_slide02() {
       var names, sizes, xys;
       names = ["cake", "lollipop", "cookie", "chocolate_bar"];
@@ -380,20 +367,17 @@ async function experimentInit() {
     font: 'Open Sans',
     units: undefined, 
     pos: [0.6, 0], height: 0.02,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
     color: new util.Color('black'),  opacity: undefined,
     depth: -3.0 
   });
   
   // Initialize components for Routine "trial"
   trialClock = new util.Clock();
-  // Run 'Begin Experiment' code from trial_code
   y_offset = (- 0.02);
   control_scores = [];
   current_total_score = 0;
   SLIDE_GROUPS = [null, [1, 2], [3], [301], [4, 5], [6, 7, 8, 9, 10, 11], [12], [13], [14, 15, 16, 17, 18], [19], [20], [21, 22], [23], [24]];
   
-  // Run 'Begin Experiment' code from trial_anim
   aimgs = null;
   starts = null;
   ends = null;
@@ -415,7 +399,6 @@ async function experimentInit() {
     font: 'Open Sans',
     units: undefined, 
     pos: [0.6, 0], height: 0.02,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
     color: new util.Color('black'),  opacity: undefined,
     depth: -2.0 
   });
@@ -440,13 +423,12 @@ function beginRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'begin' ---
+    //------Prepare to start Routine 'begin'-------
     t = 0;
     beginClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    // Run 'Begin Routine' code from begin_code
     slide = make_slide(`slide-00-intr`);
     slide.autoDraw = true;
     NEXT.autoDraw = true;
@@ -473,12 +455,11 @@ function beginRoutineBegin(snapshot) {
 
 function beginRoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'begin' ---
+    //------Loop for each frame of Routine 'begin'-------
     // get current time
     t = beginClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
-    // Run 'Each Frame' code from begin_code
     MOUSE_L = MOUSE.getPressed()[0];
     if ((MOUSE_L_prev !== MOUSE_L)) {
         MOUSE_L_prev = MOUSE_L;
@@ -524,15 +505,14 @@ function beginRoutineEachFrame() {
 }
 
 
-function beginRoutineEnd(snapshot) {
+function beginRoutineEnd() {
   return async function () {
-    //--- Ending Routine 'begin' ---
+    //------Ending Routine 'begin'-------
     beginComponents.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     });
-    // Run 'End Routine' code from begin_code
     slide.autoDraw = false;
     NEXT.autoDraw = false;
     NEXT.pos = NEXT_POS;
@@ -543,16 +523,13 @@ function beginRoutineEnd(snapshot) {
     // the Routine "begin" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
-    // Routines running outside a loop should always advance the datafile row
-    if (currentLoop === psychoJS.experiment) {
-      psychoJS.experiment.nextEntry(snapshot);
-    }
     return Scheduler.Event.NEXT;
-  }
+  };
 }
 
 
 var trials;
+var currentLoop;
 function trialsLoopBegin(trialsLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
@@ -570,13 +547,13 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
     
     // Schedule all the trials in the trialList:
     trials.forEach(function() {
-      snapshot = trials.getSnapshot();
+      const snapshot = trials.getSnapshot();
     
       trialsLoopScheduler.add(importConditions(snapshot));
       trialsLoopScheduler.add(trialRoutineBegin(snapshot));
       trialsLoopScheduler.add(trialRoutineEachFrame());
-      trialsLoopScheduler.add(trialRoutineEnd(snapshot));
-      trialsLoopScheduler.add(trialsLoopEndIteration(trialsLoopScheduler, snapshot));
+      trialsLoopScheduler.add(trialRoutineEnd());
+      trialsLoopScheduler.add(endLoopIteration(trialsLoopScheduler, snapshot));
     });
     
     return Scheduler.Event.NEXT;
@@ -585,32 +562,9 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
 
 
 async function trialsLoopEnd() {
-  // terminate loop
   psychoJS.experiment.removeLoop(trials);
-  // update the current loop from the ExperimentHandler
-  if (psychoJS.experiment._unfinishedLoops.length>0)
-    currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
-  else
-    currentLoop = psychoJS.experiment;  // so we use addData from the experiment
+
   return Scheduler.Event.NEXT;
-}
-
-
-function trialsLoopEndIteration(scheduler, snapshot) {
-  // ------Prepare for next entry------
-  return async function () {
-    if (typeof snapshot !== 'undefined') {
-      // ------Check if user ended loop early------
-      if (snapshot.finished) {
-        // Check for and save orphaned data
-        if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
-        }
-        scheduler.stop();
-      }
-    return Scheduler.Event.NEXT;
-    }
-  };
 }
 
 
@@ -635,13 +589,12 @@ function trialRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'trial' ---
+    //------Prepare to start Routine 'trial'-------
     t = 0;
     trialClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
-    // Run 'Begin Routine' code from trial_code
     trials.addData("expVersion", expVersion);
     cimgs = null;
     cimg_names = [];
@@ -690,7 +643,6 @@ function trialRoutineBegin(snapshot) {
         }
     }
     
-    // Run 'Begin Routine' code from trial_anim
     var _pj;
     function _pj_snippets(container) {
         function in_es6(left, right) {
@@ -734,12 +686,11 @@ var radio0s;
 var radio1s;
 function trialRoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'trial' ---
+    //------Loop for each frame of Routine 'trial'-------
     // get current time
     t = trialClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
-    // Run 'Each Frame' code from trial_code
     if (USE_AUDIO) {
         if (((play_6b_once && (slides[idx].name === "slide-06")) && ((t - SOUND_T) > SOUND_DUR))) {
             play_6b_once = false;
@@ -866,7 +817,6 @@ function trialRoutineEachFrame() {
     ;
     }
     
-    // Run 'Each Frame' code from trial_anim
     if (run_anim) {
         for (var i, _pj_c = 0, _pj_a = util.range(aimgs.length), _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
             i = _pj_a[_pj_c];
@@ -917,15 +867,14 @@ function trialRoutineEachFrame() {
 
 
 var is_correct;
-function trialRoutineEnd(snapshot) {
+function trialRoutineEnd() {
   return async function () {
-    //--- Ending Routine 'trial' ---
+    //------Ending Routine 'trial'-------
     trialComponents.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     });
-    // Run 'End Routine' code from trial_code
     for (var cimg, _pj_c = 0, _pj_a = cimgs, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
         cimg = _pj_a[_pj_c];
         cimg.size = [0, 0];
@@ -956,7 +905,6 @@ function trialRoutineEnd(snapshot) {
     }
     trials.addData("response_time", response_time);
     
-    // Run 'End Routine' code from trial_anim
     if (run_anim) {
         run_anim = false;
     }
@@ -964,12 +912,31 @@ function trialRoutineEnd(snapshot) {
     // the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
-    // Routines running outside a loop should always advance the datafile row
-    if (currentLoop === psychoJS.experiment) {
-      psychoJS.experiment.nextEntry(snapshot);
-    }
     return Scheduler.Event.NEXT;
-  }
+  };
+}
+
+
+function endLoopIteration(scheduler, snapshot) {
+  // ------Prepare for next entry------
+  return async function () {
+    if (typeof snapshot !== 'undefined') {
+      // ------Check if user ended loop early------
+      if (snapshot.finished) {
+        // Check for and save orphaned data
+        if (psychoJS.experiment.isEntryEmpty()) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        scheduler.stop();
+      } else {
+        const thisTrial = snapshot.getCurrentTrial();
+        if (typeof thisTrial === 'undefined' || !('isTrials' in thisTrial) || thisTrial.isTrials) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+      }
+    return Scheduler.Event.NEXT;
+    }
+  };
 }
 
 
